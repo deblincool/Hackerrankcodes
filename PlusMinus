@@ -1,1 +1,37 @@
+import java.math.*;
 
+import java.util.*;
+
+public class Solution
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner in = new Scanner(System.in);
+        int arr[]=new int[500];
+        int i,s;
+        double p=0,n=0,z=0;
+        s=in.nextInt();
+        for(i=0;i<s;i++)
+        {
+            arr[i]=in.nextInt();
+            if(arr[i]>0)
+            {
+                p++;
+            }
+            if(arr[i]==0)
+            {
+                z++;
+            }
+            if(arr[i]<0)
+            {
+                n++;
+            }
+        }
+        System.out.format("%.6f",p/s);
+        System.out.format("\n%.6f",n/s);
+        System.out.format("\n%.6f",z/s);
+    
+    
+    }
+}
