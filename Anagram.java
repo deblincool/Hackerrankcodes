@@ -72,11 +72,11 @@ The two strings contain all the same letters in the same frequencies, so we prin
 
 import java.util.Scanner;
 
-public class Solution {
+public class Solution { 
 
     static boolean isAnagram(String a, String b) {
         int i,j,f=0;
-        int arr1[]=new int[100];
+        int arr1[]=new int[100];                                                
         int arr2[]=new int[100];
         for(i=65;i<=90;i++)
         {
@@ -122,6 +122,23 @@ public class Solution {
         return false;
         else
         return true;
+        
+        /*
+        static boolean isAnagram(String A, String B) {
+	   A=A.toLowerCase();
+	   B=B.toLowerCase();
+	   boolean f = false;
+	  char[] c = A.toCharArray();
+	  Arrays.sort(c);
+	  char[] d = B.toCharArray();
+	  Arrays.sort(d);
+	  String a = new String (c);
+      String b = new String (d);
+      if (a.equals(b)) {
+    	  f=true;
+      }
+      return f;
+      */
              
                 // Complete the function
     }
